@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -121,12 +122,13 @@
         }
     </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
             <a class="navbar-brand d-flex align-items-center" href="index.html">
-                <img src="/api/placeholder/40/40" alt="Logo" class="me-2">
+                <img src="images/ArreglosSL_logo_v3.jpg" alt="Logo" class="me-2 img-fluid" style="max-height: 50px;">
                 ArreglosSL
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -146,6 +148,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="Contact.html">Contacto</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Contact.html">Ubicación</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -153,8 +158,8 @@
 
     <!-- Página de Contacto -->
     <div class="container py-5" id="contacto">
-        <h1 class="text-center mb-5">Contacto</h1>
-        
+        <h1 class="text-center mb-5">Encuentranos</h1>
+
         <div class="row">
             <div class="col-md-6 mb-5">
                 <h2>Envíanos un mensaje</h2>
@@ -178,37 +183,36 @@
                     <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
                 </form>
             </div>
-            
+
             <div class="col-md-6">
-                <h2>Información de Contacto</h2>
-                <div class="mb-4">
-                    <h5>Dirección</h5>
-                    <p>Calle del Mueble, 123<br>
-                    28001 Madrid, España</p>
-                </div>
-                <div class="mb-4">
-                    <h5>Teléfono</h5>
-                    <p>+34 900 123 456</p>
-                </div>
-                <div class="mb-4">
-                    <h5>Email</h5>
-                    <p>info@luxurywood.com</p>
-                </div>
-                <div class="mb-4">
-                    <h5>Horario</h5>
-                    <p>Lunes a Viernes: 10:00 - 20:00<br>
-                    Sábados: 10:00 - 14:00</p>
-                </div>
-                <!-- Aquí iría un mapa de Google Maps -->
-                <div class="ratio ratio-16x9">
-                    <img src="/api/placeholder/600/450" class="img-fluid" alt="Mapa">
+                <div class="p-4 bg-light border rounded shadow">
+                    <h2>Dirección</h2>
+                    <div class="mb-4">
+                        <h5>IES, La Marisma</h5>
+                        <p>
+                            CP:<u>21005</u>
+                            <br> Huelva, España
+                        </p>
+                    </div>
+                    <div class="mb-4">
+                        <h5>Teléfono</h5>
+                        <p>+34 900 123 456</p>
+                    </div>
+                    <!-- Mapa de Google Maps -->
+                    <div class="ratio ratio-16x9">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3204.920189991931!2d-6.935293436181382!3d37.27674035053359!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1279d1f86d2b3d%3A0xa8439c94a2d4fd52!2sIES%20La%20Marisma!5e0!3m2!1ses!2ses!4v1708621744123!5m2!1ses!2ses"
+                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                        </iframe>
+                    </div>
                 </div>
             </div>
+
         </div>
     </div>
 
-      <!-- Footer -->
-      <footer class="footer-section">
+    <!-- Footer -->
+    <footer class="footer-section">
         <div class="footer-top py-5" style="background-color: #8B4513;">
             <div class="container">
                 <div class="row g-4">
@@ -233,10 +237,14 @@
                                 <h5 class="text-white mb-4">Enlaces Rápidos</h5>
                                 <ul class="list-unstyled footer-links">
                                     <li><a href="#" class="text-light opacity-75 text-decoration-none">Inicio</a></li>
-                                    <li><a href="Catalogo.html" class="text-light opacity-75 text-decoration-none">Catálogo</a></li>
+                                    <li><a href="Catalogo.html"
+                                            class="text-light opacity-75 text-decoration-none">Catálogo</a></li>
                                     <li><a href="Us.html" class="text-light opacity-75 text-decoration-none">Sobre
                                             Nosotros</a></li>
-                                    <li><a href="Contact.html" class="text-light opacity-75 text-decoration-none">Contacto</a></li>
+                                    <li><a href="Contact.html"
+                                            class="text-light opacity-75 text-decoration-none">Contacto</a></li>
+                                    <li><a href="Contact.html"
+                                            class="text-light opacity-75 text-decoration-none">Ubicanos</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -271,4 +279,5 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
