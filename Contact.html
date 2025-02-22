@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LuxuryWood - Catálogo</title>
+    <link rel="icon" type="image/x-icon" href="/api/placeholder/32/32">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --primary-brown: #8B4513;
+            --secondary-brown: #DEB887;
+            --light-beige: #F5F5DC;
+        }
+
+        body {
+            background-color: var(--light-beige);
+        }
+
+        .navbar {
+            background-color: var(--primary-brown) !important;
+        }
+
+        .card {
+            border-color: var(--secondary-brown);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.03);
+        }
+
+        .btn-primary {
+            background-color: var(--primary-brown);
+            border-color: var(--primary-brown);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--secondary-brown);
+            border-color: var(--secondary-brown);
+        }
+
+        .category-title {
+            border-bottom: 2px solid var(--primary-brown);
+            padding-bottom: 10px;
+            margin-bottom: 30px;
+        }
+
+        .team-member img {
+            border: 3px solid var(--secondary-brown);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--primary-brown);
+        }
+
+        .filter-button {
+            background-color: var(--light-beige);
+            border: 1px solid var(--secondary-brown);
+            margin: 5px;
+            padding: 8px 15px;
+        }
+
+        .filter-button.active {
+            background-color: var(--secondary-brown);
+            color: white;
+        }
+
+        .footer-section {
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-links li {
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .footer-links li a:hover {
+            opacity: 1 !important;
+            padding-left: 5px;
+        }
+
+        .social-icon {
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover {
+            transform: translateY(-3px);
+        }
+
+        .social-icon i {
+            transition: all 0.3s ease;
+        }
+
+        .social-icon:hover i {
+            opacity: 1 !important;
+        }
+
+        .newsletter input {
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: white;
+        }
+
+        .newsletter input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .newsletter button {
+            background-color: #DEB887;
+            border-color: #DEB887;
+            color: #8B4513;
+            transition: all 0.3s ease;
+        }
+
+        .newsletter button:hover {
+            background-color: white;
+            border-color: white;
+            color: #8B4513;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar (igual que en la página principal) -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="index.html">
+                <img src="/api/placeholder/40/40" alt="Logo" class="me-2">
+                LuxuryWood
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Página de Contacto -->
+    <div class="container py-5" id="contacto">
+        <h1 class="text-center mb-5">Contacto</h1>
+        
+        <div class="row">
+            <div class="col-md-6 mb-5">
+                <h2>Envíanos un mensaje</h2>
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="telefono" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono">
+                    </div>
+                    <div class="mb-3">
+                        <label for="mensaje" class="form-label">Mensaje</label>
+                        <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+            
+            <div class="col-md-6">
+                <h2>Información de Contacto</h2>
+                <div class="mb-4">
+                    <h5>Dirección</h5>
+                    <p>Calle del Mueble, 123<br>
+                    28001 Madrid, España</p>
+                </div>
+                <div class="mb-4">
+                    <h5>Teléfono</h5>
+                    <p>+34 900 123 456</p>
+                </div>
+                <div class="mb-4">
+                    <h5>Email</h5>
+                    <p>info@luxurywood.com</p>
+                </div>
+                <div class="mb-4">
+                    <h5>Horario</h5>
+                    <p>Lunes a Viernes: 10:00 - 20:00<br>
+                    Sábados: 10:00 - 14:00</p>
+                </div>
+                <!-- Aquí iría un mapa de Google Maps -->
+                <div class="ratio ratio-16x9">
+                    <img src="/api/placeholder/600/450" class="img-fluid" alt="Mapa">
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <!-- Footer -->
+      <footer class="footer-section">
+        <div class="footer-top py-5" style="background-color: #8B4513;">
+            <div class="container">
+                <div class="row g-4">
+                    <!-- Columna de la empresa -->
+                    <div class="col-lg-4 col-md-6">
+                        <div class="footer-widget">
+                            <h3 class="text-white mb-4">ArreglosSL</h3>
+                            <p class="text-light opacity-75">Tu tienda de confianza en mobiliario de calidad. Más de 20
+                                años creando hogares únicos con diseños exclusivos y materiales premium.</p>
+                            <div class="newsletter mt-4">
+                                <form class="d-flex">
+                                    <input type="email" class="form-control" placeholder="Tu email...">
+                                    <button class="btn btn-light ms-2">Suscribir</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-5 offset-lg-1 col-md-6">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div class="footer-widget">
+                                <h5 class="text-white mb-4">Enlaces Rápidos</h5>
+                                <ul class="list-unstyled footer-links">
+                                    <li><a href="#" class="text-light opacity-75 text-decoration-none">Inicio</a></li>
+                                    <li><a href="#" class="text-light opacity-75 text-decoration-none">Catálogo</a></li>
+                                    <li><a href="#" class="text-light opacity-75 text-decoration-none">Sobre
+                                            Nosotros</a></li>
+                                    <li><a href="#" class="text-light opacity-75 text-decoration-none">Contacto</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-1 offset-lg-1 col-md-6">
+                        <div class="d-flex justify-content-end align-items-center">
+                            <div class="horario-atencion text-end">
+                                <h6 class="text-white mb-2">Horario de Atención</h6>
+                                <p class="text-light opacity-75 mb-1">Lun - Vie: 8:00 - 20:00</p>
+                                <p class="text-light opacity-75 mb-0">Sáb:<br>9:00 - 14:00</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom -->
+        <div class="footer-bottom py-3" style="background-color: #723A0C;">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p class="text-light opacity-75 mb-0">© 2024 ArreglosSL. Todos los derechos reservados.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <a href="#" class="text-light opacity-75 text-decoration-none me-3">Política de Privacidad</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
